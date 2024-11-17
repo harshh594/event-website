@@ -1,0 +1,281 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #ffffff;
+    color: #333;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+header {
+    background: #2c3e50;
+    color: #fff;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    transition: background 0.3s ease;
+}
+
+header .logo {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+header .logo span {
+    color: #f39c12;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+}
+
+header nav ul li {
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: #fff;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+}
+
+header nav ul li a:hover {
+    color: #f39c12;
+}
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(to right, #6a11cb, #2575fc);
+    color: #063838;
+    text-align: center;
+    padding: 10rem 1rem;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    animation: fadeInUp 1.5s ease-out;
+}
+
+.hero-content p {
+    margin-bottom: 2rem;
+    font-size: 1.5rem;
+    animation: fadeInUp 1.8s ease-out;
+}
+
+.hero-content .cta {
+    padding: 1rem 2rem;
+    background: #f39c12;
+    color: #fff;
+    border: none;
+    font-size: 1.1rem;
+    cursor: pointer;
+    border-radius: 30px;
+    transition: background-color 0.3s ease;
+    animation: fadeInUp 2s ease-out;
+}
+
+.hero-content .cta:hover {
+    background-color: #e67e22;
+}
+
+/* Section Styles */
+section {
+    padding: 4rem 2rem;
+    text-align: center;
+    animation: fadeIn 2s ease-in-out;
+}
+
+section h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+section p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+ 
+
+.schedule ul {
+    list-style: none;
+    padding: 0;
+    font-size: 1.1rem;
+   
+}
+
+.schedule ul li {
+    margin: 10px 0;
+}
+
+/* Modal Styles */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    justify-content: center;
+    align-items: center;
+    animation: fadeInModal 0.5s ease-in-out;
+}
+
+.modal-content {
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 400px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.modal .close {
+    font-size: 2rem;
+    background: none;
+    border: none;
+    color: #333;
+    cursor: pointer;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+}
+
+/* Form Styles */
+form input, form textarea {
+    width: 100%;
+    padding: 0.75rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+form input:focus, form textarea:focus {
+    outline: none;
+    border-color: #f39c12;
+    box-shadow: 0 0 5px rgba(243, 156, 18, 0.5);
+}
+
+form button {
+    padding: 1rem 2rem;
+    background: #2c3e50;
+    color: white;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+form button:hover {
+    background: #34495e;
+}
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    padding: 2rem;
+    background-color: #2c3e50;
+    color: white;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInModal {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .hero-content h1 {
+        font-size: 2rem;
+    }
+
+    .cta {
+        padding: 1rem 1.5rem;
+    }
+
+    section {
+        padding: 2rem 1rem;
+    }
+}
+.hero {
+    background: url('https://c0.wallpaperflare.com/preview/699/438/366/chairs-conference-room-corporate-indoors.jpg') no-repeat center center/cover;
+    color: #ffffff;
+    text-align: center;
+    padding: 15rem 1rem;
+    animation: fadeIn 2s ease-in-out;
+    height: 100vh; /* Ensure the hero section covers the full viewport height */
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    animation: fadeInUp 1.5s ease-out;
+}
+
+.hero-content p {
+    margin-bottom: 2rem;
+    font-size: 1.5rem;
+    animation: fadeInUp 1.8s ease-out;
+}
+
+.hero-content .cta {
+    padding: 1rem 2rem;
+    background: #f38b0b;
+    color: #fff;
+    border: none;
+    font-size: 1.1rem;
+    cursor: pointer;
+    border-radius: 30px;
+    transition: background-color 0.3s ease;
+    animation: fadeInUp 2s ease-out;
+}
+
+.hero-content .cta:hover {
+    background-color: #e67e22;
+}
+.schedule {
+    background: #ECDFCC;}
+    

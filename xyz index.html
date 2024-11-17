@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Join the HARSHIT Annual Tech Conference 2024 to explore innovation and technology.">
+    <meta name="keywords" content="Tech Conference, Innovation, Networking, Workshops">
+    <meta name="author" content="HARSHIT Team">
+    <title>HARSHIT - Annual Tech Conference</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <header>
+        <div class="logo" aria-label="HARSHIT Logo">HARSH<span>X</span></div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#schedule">Schedule</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1> <align="top" > Annual Tech Conference 2024 </align> </h1>
+            <p>Where Innovation Meets Opportunity</p>
+            <button onclick="openModal()" class="cta" aria-label="Register for the event">Register Now</button>
+        </div>
+    </section>
+
+    <!-- Other Sections -->
+    <section id="about" class="about">
+        <h2>About the Event</h2>
+        <p>Join thought leaders from the tech industry as they discuss the future of innovation, artificial intelligence, and digital transformation.</p>
+    </section>
+
+    <section id="schedule" class="schedule">
+        <h2>Event Schedule</h2>
+        <ul>
+            <li><strong>10:00 AM:</strong> Opening Keynote</li>
+            <li><strong>12:00 PM:</strong> Workshop Sessions</li>
+            <li><strong>2:00 PM:</strong> Panel Discussions</li>
+            <li><strong>4:00 PM:</strong> Networking Opportunities</li>
+        </ul>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>Contact Us</h2>
+        <form id="contact-form" onsubmit="return validateForm(event)">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" placeholder="Your Name" required>
+            <label for="email">Your Email</label>
+            <input type="email" id="email" placeholder="Your Email" required>
+            <label for="message">Your Message</label>
+            <textarea id="message" placeholder="Your Message" required></textarea>
+            <button type="submit">Send</button>
+        </form>
+    </section>
+
+    <div id="registerModal" class="modal" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <button class="close" onclick="closeModal()" aria-label="Close Registration Modal">&times;</button>
+            <h2>Register for the Event</h2>
+            <form onsubmit="return registerForm(event)">
+                <label for="reg-name">Your Name</label>
+                <input type="text" id="reg-name" placeholder="Your Name" required>
+                <label for="reg-email">Your Email</label>
+                <input type="email" id="reg-email" placeholder="Your Email" required>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 HARSHIT - All Rights Reserved</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
